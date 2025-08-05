@@ -1,14 +1,14 @@
-
-       {
-         "name": "aviator-signal-collector",
-         "version": "1.0.0",
-         "main": "index.js",
-         "scripts": {
-           "start": "node index.js"
-         },
-         "dependencies": {
-           "express": "^4.17.1",
-           "puppeteer": "^20.0.0",
-           "sqlite3": "^5.0.0"
-         }
-       }
+{
+  "name": "aviator-signal-collector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer-core": "^22.15.0",
+    "sqlite3": "^5.1.7"
+  }
+}
