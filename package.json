@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "preinstall": "npm uninstall puppeteer-core || true",
     "start": "node index.js",
     "postinstall": "npx puppeteer browsers install chrome@127.0.6533.88"
   },
