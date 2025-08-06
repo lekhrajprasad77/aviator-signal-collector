@@ -38,7 +38,8 @@ app.listen(port, () => console.log(`Server running on port ${port}`));
 async function scrapeSignals() {
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+    executablePath: '/opt/render/.cache/puppeteer/chrome/linux-127.0.6533.88/chrome-linux64/chrome'
   });
   const page = await browser.newPage();
   await page.goto('https://1wmkff.life/casino/play/aviator?sub1=20250304-1943-4720-a1d0-866ebe15a895&sub2=1wins_in_reg', {
