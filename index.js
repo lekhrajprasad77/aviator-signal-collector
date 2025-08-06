@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer'); // Changed from puppeteer-core
+const puppeteer = require('puppeteer');
 const sqlite3 = require('sqlite3').verbose();
 const express = require('express');
 const app = express();
@@ -38,8 +38,7 @@ app.listen(port, () => console.log(`Server running on port ${port}`));
 async function scrapeSignals() {
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
-    // Removed executablePath
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
   });
   const page = await browser.newPage();
   await page.goto('https://1wmkff.life/casino/play/aviator?sub1=20250304-1943-4720-a1d0-866ebe15a895&sub2=1wins_in_reg', {
