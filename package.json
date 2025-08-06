@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "puppeteer": "^22.15.0",
+    "puppeteer": "22.15.0",
     "sqlite3": "^5.1.7"
+  },
+  "resolutions": {
+    "puppeteer-core": null
   }
 }
